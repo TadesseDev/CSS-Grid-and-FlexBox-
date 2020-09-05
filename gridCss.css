@@ -1,0 +1,38 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;   
+}
+.box1{
+    background-color: lightcoral;
+    grid-area: box1;
+    position: sticky;
+    bottom: 0px;
+}
+
+.box2{
+    background-color: lightblue;
+    grid-area: box2;
+    display: inline-block;
+}
+.box3{
+    background-color: lightgreen;
+    grid-area: box3;
+    justify-self: center;
+    align-self: center;
+}
+main{
+    height: 1000%;
+    width: 100%;
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows: 100px 200px;
+    grid-template-areas: "box1 box1" 
+    "box2  box3";
+    background-color: silver;
+    /* justify-items: center;
+    align-items: center; */
+}                      
