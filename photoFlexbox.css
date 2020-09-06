@@ -1,0 +1,15 @@
+.imageContainer{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+img{
+    display: list-item;
+    width: 300px;
+    margin-bottom: 20px;
+    /* we could use flex-basis: 300px; 
+    but for non flexible element 
+    the flex-basis will have no effect  */
+}
